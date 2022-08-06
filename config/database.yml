@@ -14,15 +14,6 @@
 # Configure Using Gemfile
 # gem "pg"
 #
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  database: js_portfolio_production
-  pool: 5
-  username: js_portfolio
-  password: '721'
-  database: js_portfolio_production
-  
 
 development:
   adapter: postgresql
@@ -88,11 +79,12 @@ test:
 #   production:
 #     url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
-# Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: js_portfolio_production
+  adapter: postgresql
+  encoding: unicode
+  database: js_portfolio
+  pool: 5
   username: js_portfolio
-  password: <%= ENV["JS_PORTFOLIO_DATABASE_PASSWORD"] %>
+  password: '721'
