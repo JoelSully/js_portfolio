@@ -22,7 +22,7 @@ development:
   pool: 5
   username: js_portfolio
   password: '721'
-  database: js_portfolio_development
+  database: js_portfolio
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: js_portfolio
+  database: js_portfolio_test
   pool: 5
   username: js_portfolio
   password: '721'
@@ -84,7 +84,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: js_portfolio
+  database: js_portfolio_production
   pool: 5
   username: js_portfolio
   password: '721'
